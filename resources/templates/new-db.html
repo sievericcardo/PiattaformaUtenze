@@ -1,0 +1,58 @@
+<div id="toast"></div>
+<div class="box-content green-box boxed" style="margin-top: 30px;">
+  <form class="ui form" id="db-form" name="db">
+    <h4 class="ui dividing header">Informazioni utenza</h4>
+    <div class="field">
+      <label>Contatto richiedente</label>
+      <div class="two fields">
+        <div class="field">
+          <input type="text" name="nome_richiedente" placeholder="Nome">
+        </div>
+        <div class="field">
+          <input type="text" name="cognome_richiedente" placeholder="Cognome">
+        </div>
+        <div class="field">
+          <input type="text" name="azienda_richiedente" placeholder="Azienda">
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label>Contatto utente</label>
+      <div class="three fields">
+        <div class="field">
+          <input type="text" name="nome_utente" placeholder="Nome">
+        </div>
+        <div class="field">
+          <input type="text" name="cognome_utente" placeholder="Cognome">
+        </div>
+        <div class="field">
+          <input type="text" name="azienda_utente" placeholder="Azienda">
+        </div>
+      </div>
+    </div>
+    <h4 class="ui dividing header">Informazioni DB</h4>
+    <div class="field">
+      <div class="four fields">
+        <div class="field">
+          <label>Nome DB</label>
+          <input type="text" name="nome_db" minlength="7" maxlength="15" placeholder="Nome DB">
+        </div>
+        <div class="field">
+          <label>Schema</label>
+          <input type="text" name="schema" placeholder="DB Schema">
+        </div>
+        <div class="field">
+          <label>Privilegi</label>
+          <input type="text" name="privilegi" placeholder="Privilegi/ticket">
+        </div>
+        <div class="field">
+          <label>Scadenza</label>
+          <input type="date" name="scadenza" placeholder="Scadenza" >
+        </div>
+      </div>
+    </div>
+    <button class="ui primary button" tabindex="0" type="submit">Submit</button>
+  </form>
+</div>
+
+<script src='../js/new-db.js'></script>

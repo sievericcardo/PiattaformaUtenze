@@ -1,0 +1,24 @@
+<div id="toast"></div>
+<form class="ui form form-signin" id="register-form" name="register">
+  <h4 class="ui dividing header">Informazioni utente</h4>
+  <div class="field">
+    <label>Nome</label>
+    <div class="field">
+      <input type="text" name="user_name" placeholder="Username" required pattern=".{4,20}">
+    </div>
+    <div class="field">
+      <input type="email" name="user_email" placeholder="Indirizzo e-mail" required pattern=".{7,40}">
+    </div>
+    <label>Password</label>
+    <div class="field">
+      <input type="password" name="user_pass" required pattern=".{8,23}">
+    </div>
+    <label>Ripeti password</label>
+    <div class="field">
+      <input type="password" name="user_pass_check" required>
+    </div>
+  </div>
+  <button class="ui primary button" tabindex="0" type="submit">Submit</button>
+</form>
+<p class="box-content">Gi&agrave; registrato? <a href="index.php">Effettua il login</a></p>
+<script src="public/js/register.js"></script>

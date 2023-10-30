@@ -1,0 +1,20 @@
+<div id="toast"></div>
+<form id="login-form" class="ui equal width form form-signin" name="login">
+  <div class="fields">
+    <div class="field">
+      <i class="user icon"></i>
+      <label>Username</label>
+      <input type="text" name="user_name" placeholder="Username" required pattern=".{4,20}">
+    </div>
+  </div>
+  <div class="fields">
+    <div class="field">
+      <i class="lock icon"></i>
+      <label>Password</label>
+      <input type="password" name="user_pass" required pattern=".{8,23}">
+    </div>
+  </div>
+  <button class="ui primary button" tabindex="0" type="submit">Submit</button>
+</form>
+
+<script src='public/js/login.js'></script>
